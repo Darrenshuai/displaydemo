@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>产融信手机demo</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="stylesheet" href="assets/css/amazeui.min.css">
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/loginregist.css">
+<body>
+<div class="wrap">
+  <div class="am-page">
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+        <a href=""><i class="am-icon-chevron-left"></i></a>
+     </div>
+     <h1 class="am-header-title">
+       <a>产融信-注册</a>
+     </h1>
+     <div class="am-header-right am-header-nav">
+        <a href="login.html" class="">
+            <i class="am-header-icon am-icon-user"></i></a>
+    </div>
+    </header>
+    <div class="grid">
+      <section class="regbox">
+        <form id="form-register">
+          <input type="hidden" name="Redirect" id="Redirect" value="">
+          <ul>
+            <li>
+              <div class="item-inner ubox">
+                <div class="label">用户类型</div>
+                <div class="ubox box-f1 am-form" >
+                  <select>
+                    <option value="1">个人用户</option>
+                    <option value="2">企业用户</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+             <li>
+              <div class="item-inner ubox">
+                <div class="label">用户角色</div>
+                <div class="ubox box-f1 am-form" >
+                  <select>
+                    <option value="1">我要理财</option>
+                    <option value="2">我要信贷</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-inner ubox">
+                <div class="label">手机号</div>
+                <div class="ubox box-f1"><input type="tel" id="mobilephone" name="mobilephone" placeholder="请使用常用手机号"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item-inner ubox">
+                <div class="label">邮箱</div>
+                <div class="ubox box-f1"><input type="tel" id="mobilephone" name="mobilephone" placeholder="请使用常用邮箱"></div>
+              </div>
+            </li>
+            <li>
+              <div class="item-inner ubox">
+                <div class="label">设置密码</div>
+                <div class="ubox box-f1"><input type="password" name="Password" id="Password" maxlength="16" placeholder="请输入8-16位字母或数字"></div>
+              </div>
+            </li>
+            <li class="ubox code">
+              <div class="item-inner ubox ub-f1">
+                <div class="label">图片验证码</div>
+                <div class="ubox ub-f1"><input type="text" id="imgvefyData" maxlength="4" placeholder="图片验证码"></div>
+                <div class="common-icon reg_codeImg"></div>
+              </div>
+              <div class="picharge">
+                <img src="http://www.crxjr.com/Control/VailidCode.aspx" id="imgCode" onclick="document.getElementById('imgCode').src = 'http://www.crxjr.com/Control/VailidCode.aspx?temp=' + new Date().toString()" alt="验证码" title="看不清？点击换一张">
+              </div>
+            </li>
+            <li class="ubox code">
+              <div class="item-inner ubox ub-f1">
+                <div class="label">手机验证码</div>
+                <div class="ubox ub-f1"><input type="text" id="mbyzm" maxlength="6" placeholder="手机验证码"></div>
+                  <div class="common-icon reg_codeImg"></div>
+              </div>
+              <input type="button" class="sendtime" id="sendtime" value="发送验证码">
+            </li>
+          </ul>
+            <input type="hidden" name="RegisterValidateType" id="regValidateType" value="GenerateUserNameByMobileForBorrower">
+            <div class="form_warning Wrong"></div>
+        </form>
+        <div class="list-btn">
+                <a href="javascript:;" id="login_btn" class="am-btn am-btn-primary am-btn-block">立即注册</a>
+            </div>
+        <div class="ps-bottom  box">
+            <div class="agree">*注册即同意<a href="http://www.crxjr.com/Upload/File/Content/2015-05-27/201505271445404456.pdf" class="agreeLink">《产融信在线服务协议》</a></div>
+            <a href="login.html" class="olduser">已有账户</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+  <ul class="am-navbar-nav am-cf am-avg-sm-5">
+      <li>
+        <a href="index.html" class="">
+            <span class="am-icon-home"></span>
+            <span class="am-navbar-label">主页</span>
+        </a>
+      </li>
+      <li>
+        <a href="projectList.html" class="">
+            <span class="am-icon-bar-chart"></span>
+            <span class="am-navbar-label">项目列表</span>
+        </a>
+      </li>
+      <li>
+        <a href="usercenter.html" class="">
+            <span class="am-icon-dollar"></span>
+            <span class="am-navbar-label">账户中心</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="">
+            <span class="am-icon-user"></span>
+            <span class="am-navbar-label">关于我们</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+            <span class="am-icon-th-list"></span>
+            <span class="am-navbar-label">更多</span>
+        </a>
+      </li>
+  </ul>
+</div>
+<script src="assets/js/lib/jquery.min.js"></script>
+<script src="assets/js/lib/amazeui.widgets.helper.min.js"></script>
+<script src="assets/js/lib/handlebars.min.js"></script>
+<script src="assets/js/lib/amazeui.js"></script>
+<script src="assets/js/lib/amazeui.legacy.js"></script>
+<script>
+  var IScroll = $.AMUI.iScroll;
+    var myScroll = new IScroll('.grid',{
+      click:true
+    });
+</script>
+</body>
+</html>

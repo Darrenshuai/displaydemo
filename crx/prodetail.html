@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>产融信手机demo</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="stylesheet" href="assets/css/amazeui.min.css">
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/detail.css">
+<body>
+<div class="wrap">
+  <div class="am-page">
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+        <a href="projectList.html"><i class="am-icon-chevron-left"></i></a>
+     </div>
+     <h1 class="am-header-title">
+       <a>产融信-项目详情</a>
+     </h1>
+     <div class="am-header-right am-header-nav">
+        <a href="login.html" class="">
+            <i class="am-header-icon am-icon-user"></i></a>
+    </div>
+    </header>
+    <div class="grid">
+        <section class="info">
+            <header class="tit">测试一个散标内容</header>
+            <div class="proCon ubox">
+                <div class="numRate ubox-v ">
+                    <span class="numBox ub-f1"><b>9.0</b>%</span>
+                    <div class="ub-f1 sbox-v ub-ac">
+                        <p class="numDes">到期一次回款</p>
+                    </div>
+                </div>
+                <div class="proInfo sbox-v ">
+                    <span><i class="ico-dun"></i>保障方式</span>
+                    <b>100%本金保障</b>
+                    <br>
+                    <span><i class="ico-date02"></i>投资期限</span>
+                    <b>1个月</b>
+                </div>
+            </div>
+            <div class="proInfoList boxSizing">
+                <p class="balanceInfo">
+                    <span>剩余余额(元)</span>
+                    <b>800,000</b>
+                    <span>发售总额(元)：<font>800,000</font></span>
+                </p>
+                <p>
+                  <span class="lisTitle">剩余时间</span><span class="listInfo time">2015/6/5 11:00:00</span>
+                </p>
+                <p><span class="lisTitle">起购金额</span><span class="listInfo"><font>1000元</font></span></p>
+                <p><span class="lisTitle">收益日期</span><span class="listInfo">2015/7/6</span></p>
+            </div>
+            <div class="proIntro boxSizing">
+                  <span class="title">产品介绍</span>
+                  <p>“彩虹计划”是拍拍贷推出的自动投资工具，用户使用该软件可以按照事先确定的预期收益率自动投资拍拍贷平台上的借款标的。通过自动投资所产生的每月回款（含本金和利息）将在使用期内继续自动投资，直至使用期结束。使用期结束后，彩虹计划所投资标的将到期还款。用户收回全部投资本金和相应的收益。</p>
+            </div>
+            <div class="btnWrap">
+               <a class="am-btn am-btn-secondary" >立即抢购</a>
+            </div>
+        </section>
+    </div>
+  </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+  <ul class="am-navbar-nav am-cf am-avg-sm-5">
+      <li>
+        <a href="index.html" class="">
+            <span class="am-icon-home"></span>
+            <span class="am-navbar-label">主页</span>
+        </a>
+      </li>
+      <li>
+        <a href="projectList.html" class="">
+            <span class="am-icon-bar-chart"></span>
+            <span class="am-navbar-label">项目列表</span>
+        </a>
+      </li>
+      <li>
+        <a href="usercenter.html" class="">
+            <span class="am-icon-dollar"></span>
+            <span class="am-navbar-label">账户中心</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="">
+            <span class="am-icon-user"></span>
+            <span class="am-navbar-label">关于我们</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+            <span class="am-icon-th-list"></span>
+            <span class="am-navbar-label">更多</span>
+        </a>
+      </li>
+  </ul>
+</div>
+<script src="assets/js/lib/jquery.min.js"></script>
+<script src="assets/js/lib/amazeui.widgets.helper.min.js"></script>
+<script src="assets/js/lib/handlebars.min.js"></script>
+<script src="assets/js/lib/amazeui.js"></script>
+<script src="assets/js/lib/amazeui.legacy.js"></script>
+<script>
+  var IScroll = $.AMUI.iScroll;
+    var myScroll = new IScroll('.grid',{
+      click:true
+    });
+</script>
+</body>
+</html>

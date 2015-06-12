@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>产融信手机demo</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="stylesheet" href="assets/css/amazeui.min.css">
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/centerbox.css">
+<body>
+<div class="wrap">
+  <div class="am-page">
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+        <a href="usercenter.html"><i class="am-icon-chevron-left"></i></a>
+     </div>
+     <h1 class="am-header-title">
+       <a>提现</a>
+     </h1>
+     <div class="am-header-right am-header-nav">
+        <a href="login.html" class="">
+            <i class="am-header-icon am-icon-user"></i></a>
+    </div>
+    </header>
+    <div class="grid">
+      <section class="centerbox">
+          <div class="userinfo ubox">
+              <div class="username">您好！<em>乔XX</em></div>
+              <div class="safelve ubox">
+                  <em>安全等级</em>
+                  <div class="stargroup">
+                      <div class="s2" style="width:50%;">
+                        <img src="assets/images/icon.png">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="en-tab">
+              <ul>
+                <li class="ubox">
+                    <span class="na">可取现金额</span>
+                    <span class="flex cash">0.00</span>
+                </li>
+                <li class="ubox">
+                    <span class="na">您绑定的银行卡</span>
+                    <span class="flex">6222XXXX</span>
+                </li>
+                <li class="ubox">
+                    <span class="na">您的真实姓名</span>
+                    <span class="flex">姜帅</span>
+                </li>
+                <li class="ubox">
+                    <span class="na">手机号码</span>
+                    <span class="flex">18801764432</span>
+                </li>
+                <li class="ubox">
+                    <span class="na">提现方式</span>
+                    <span class="flex">
+                      <label class="am-radio-inline">
+                        <input type="radio" value="1" name="docInlineRadio" checked="">普通取现
+                      </label>
+                      <label class="am-radio-inline">
+                        <input type="radio" value="0" name="docInlineRadio" checked="">极速取现
+                      </label>
+                    </span>
+                </li>
+                 <li class="ubox">
+                    <span class="na">预计到账时间</span>
+                    <span class="flex time">
+                    </span>
+                </li>
+                <li class="ubox">
+                    <input type="text" class="txtnum" value="" placeholder="请输入提现金额">
+                </li>
+                <li class="ubox">
+                    <input type="text" class="txtnum" value="" placeholder="请输入提现密码">
+                </li>
+              </ul>
+              <div class="opt">
+                <input type="button"  class="am-btn am-btn-success" value="确认取现" >
+                <p class="tips">
+                  温馨提示：XXXXXXXXXXXXXXXXX
+                </p>
+              </div>
+          </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+  <ul class="am-navbar-nav am-cf am-avg-sm-5">
+      <li>
+        <a href="index.html" class="">
+            <span class="am-icon-home"></span>
+            <span class="am-navbar-label">主页</span>
+        </a>
+      </li>
+      <li>
+        <a href="projectList.html" class="">
+            <span class="am-icon-bar-chart"></span>
+            <span class="am-navbar-label">项目列表</span>
+        </a>
+      </li>
+      <li>
+        <a href="usercenter.html" class="">
+            <span class="am-icon-dollar"></span>
+            <span class="am-navbar-label">账户中心</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="">
+            <span class="am-icon-user"></span>
+            <span class="am-navbar-label">关于我们</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+            <span class="am-icon-th-list"></span>
+            <span class="am-navbar-label">更多</span>
+        </a>
+      </li>
+  </ul>
+</div>
+<script src="assets/js/lib/jquery.min.js"></script>
+<script src="assets/js/lib/amazeui.widgets.helper.min.js"></script>
+<script src="assets/js/lib/handlebars.min.js"></script>
+<script src="assets/js/lib/amazeui.js"></script>
+<script src="assets/js/lib/amazeui.legacy.js"></script>
+<script>
+  Date.prototype.Format = function(fmt)   
+  { 
+    var o = {   
+      "M+" : this.getMonth()+1,                 //月份   
+      "d+" : this.getDate(),                    //日   
+      "h+" : this.getHours(),                   //小时   
+      "m+" : this.getMinutes(),                 //分   
+      "s+" : this.getSeconds(),                 //秒   
+      "q+" : Math.floor((this.getMonth()+3)/3), //季度   
+      "S"  : this.getMilliseconds()             //毫秒   
+    };   
+    if(/(y+)/.test(fmt))   
+      fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));   
+    for(var k in o)   
+      if(new RegExp("("+ k +")").test(fmt))   
+    fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
+    return fmt;   
+  }
+   var IScroll = $.AMUI.iScroll;
+   var myScroll = new IScroll('.grid');
+
+   var s=new Date();
+   s.setDate(s.getDate()+2);
+   s=s.Format('yyyy-MM-dd hh:mm');
+   document.querySelector('.time').innerHTML=s;
+</script>
+</body>
+</html>

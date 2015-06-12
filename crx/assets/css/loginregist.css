@@ -1,0 +1,178 @@
+body{
+	background: #f3f3f3;
+}
+.loginbox,.regbox{
+	padding: 10px;
+}
+
+.grid ul {
+  padding: 5px 12px;
+}
+.grid ul li {
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 5px;
+  height: 50px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.ubox {
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+}
+.item-inner {
+  padding: 5px 7px;
+ box-sizing: border-box;
+}
+.item-inner .label {
+  width: 80px!important;
+  box-sizing: content-box;
+}
+.grid ul  li .label {
+  border-right: 1px solid #e8e8e8;
+  width: 104px;
+  font-size: 15px;
+  color: #333;
+  padding: 0;
+  padding-right: 15px;
+  line-height: 40px;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+  -webkit-tap-highlight-color: transparent;
+}
+input[type="text"],input[type="tel"],input[type="number"],select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: block;
+  margin: 0;
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  vertical-align: middle;
+  outline: none;
+}
+.am-form select{
+	border: 0;
+  padding-right: 20px;
+  font-size: 14px;
+    color: #A9A9A9;
+}
+.am-form select:focus{
+	outline: none;
+	border:0;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: block;
+  margin: 0;
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+      outline: none;
+  vertical-align: middle;
+}
+.form_warning {
+  padding: 6px 12px 3px 12px;
+  font-size: 12px;
+  box-sizing: border-box;
+  height: 24px;
+  color: red;
+}
+.list-btn {
+  margin: 12px;
+}
+.ps-bottom {
+  padding: 5px 12px;
+}
+.ps-bottom .forget, .ps-bottom .reg {
+  display: inline-block;
+  width: 49%;
+  color: #444;
+}
+.ps-bottom .reg {
+  text-align: right;
+}
+.regbox li .label {
+  width: 75px;
+  padding-right: 15px;
+}
+.code .sendtime {
+  background: #fff;
+  margin-left: 10px;
+  padding: 7px 3px;
+  border-radius: 5px;
+  color: #3a91cf;
+    font-size: 1.3rem;
+  border: 1px solid #3a91cf;
+}
+.regbox  ul li.code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+.code .item-inner {
+  background: #fff;
+  padding: 7px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.code .picharge {
+  margin-left: 10px;
+  width: 72px;
+  height: 50px;
+  color: #3a91cf;
+  overflow: hidden;
+}
+.code .picharge img{
+	width: 100%;
+	  height: 50px;
+}
+.ub-f1 {
+  flex: 1;
+  -webkit-flex: 1;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+}
+.ps-bottom.box{
+	display: box;
+	display: -webkit-box;
+}
+.ps-bottom .agree {
+  font-size: 12px;
+    flex: 1;
+  -webkit-box-flex: 1;
+}
+.olduser{
+	  display: block;
+  font-size: 1.3rem;
+}

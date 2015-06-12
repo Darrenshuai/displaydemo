@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>产融信手机demo</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+   <link rel="stylesheet" href="assets/css/amazeui.min.css">
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/loginregist.css">
+<body>
+<div class="wrap">
+  <div class="am-page">
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+        <a href=""><i class="am-icon-chevron-left"></i></a>
+     </div>
+     <h1 class="am-header-title">
+       <a>产融信-登录</a>
+     </h1>
+     <div class="am-header-right am-header-nav">
+        <a href="login.html" class="">
+            <i class="am-header-icon am-icon-user"></i></a>
+    </div>
+    </header>
+    <div class="grid">
+      <section class="loginbox">
+          <form id="form-register">
+              <input type="hidden" name="Redirect" id="Redirect" value="">
+              <ul>
+                <li>
+                  <div class="item-inner ubox">
+                    <div class="label">登录账户</div>
+                    <div class="ubox box-f1"><input type="text" name="UserName" id="UserName" placeholder="已绑定手机/用户名/邮箱"></div>
+                    <div class="common-icon re_hint"></div>
+                  </div>
+                </li>
+                    <li>
+                      <div class="item-inner ubox">
+                        <div class="label">登录密码</div>
+                        <div class="ubox box-f1"><input type="password" name="Password" id="Password" placeholder="密码"></div>
+                        <div class="common-icon re_hint"></div>
+                      </div>
+                    </li>
+              </ul>
+              <div class="form_warning Wrong"></div>
+            </form>
+            <div class="list-btn">
+                <a href="javascript:;" id="login_btn" class="am-btn am-btn-primary am-btn-block">立即登录</a>
+            </div>
+            <div class="ps-bottom">
+                <a class="forget">忘记密码？</a>
+                <a class="reg" href="register.html">注册</a>
+            </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+  <ul class="am-navbar-nav am-cf am-avg-sm-5">
+      <li>
+        <a href="index.html" class="">
+            <span class="am-icon-home"></span>
+            <span class="am-navbar-label">主页</span>
+        </a>
+      </li>
+      <li>
+        <a href="projectList.html" class="">
+            <span class="am-icon-bar-chart"></span>
+            <span class="am-navbar-label">项目列表</span>
+        </a>
+      </li>
+      <li>
+        <a href="usercenter.html" class="">
+            <span class="am-icon-dollar"></span>
+            <span class="am-navbar-label">账户中心</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="">
+            <span class="am-icon-user"></span>
+            <span class="am-navbar-label">关于我们</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+            <span class="am-icon-th-list"></span>
+            <span class="am-navbar-label">更多</span>
+        </a>
+      </li>
+  </ul>
+</div>
+<script src="assets/js/lib/jquery.min.js"></script>
+<script src="assets/js/lib/amazeui.widgets.helper.min.js"></script>
+<script src="assets/js/lib/handlebars.min.js"></script>
+<script src="assets/js/lib/amazeui.js"></script>
+<script src="assets/js/lib/amazeui.legacy.js"></script>
+</body>
+</html>
