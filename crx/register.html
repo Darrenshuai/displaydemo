@@ -37,22 +37,26 @@
             <li>
               <div class="item-inner ubox">
                 <div class="label">用户类型</div>
-                <div class="ubox box-f1 am-form" >
-                  <select>
-                    <option value="1">个人用户</option>
-                    <option value="2">企业用户</option>
-                  </select>
+                <div class="ubox box-f1 am-form lablegroup" >
+                   <label class="am-radio-inline">
+                        <input type="radio" value="1" name="docInlineRadio" checked="">个人用户
+                      </label>
+                      <label class="am-radio-inline">
+                        <input type="radio" value="0" name="docInlineRadio" checked="">企业用户
+                      </label>
                 </div>
               </div>
             </li>
              <li>
               <div class="item-inner ubox">
                 <div class="label">用户角色</div>
-                <div class="ubox box-f1 am-form" >
-                  <select>
-                    <option value="1">我要理财</option>
-                    <option value="2">我要信贷</option>
-                  </select>
+                <div class="ubox box-f1 am-form lablegroup" >
+                   <label class="am-radio-inline">
+                        <input type="radio" value="1" name="docInlineRadio" checked="">我要理财
+                      </label>
+                      <label class="am-radio-inline">
+                        <input type="radio" value="0" name="docInlineRadio" checked="">我要信贷
+                      </label>
                 </div>
               </div>
             </li>
@@ -149,9 +153,7 @@
 <script src="assets/js/lib/amazeui.legacy.js"></script>
 <script>
   var IScroll = $.AMUI.iScroll;
-    var myScroll = new IScroll('.grid',{
-      click:true
-    });
+    var myScroll = new IScroll('.grid');
 </script>
 </body>
 </html>

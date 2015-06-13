@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webrtcdemo</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/layout.css">	
+</head>
+<body>
+	<div class="load">
+		<input type="text" class="name" placeholder="输入昵称"><br><br>
+		<input type="button" value="进入聊天室" class="submit">
+	</div>
+	<script>
+		document.querySelector('.submit').onclick=function(){
+			var txt=document.querySelector('.name').value;
+			window.localStorage.setItem('uname',txt);
+			window.location.href='index.html';
+		}
+	</script>
+</body>

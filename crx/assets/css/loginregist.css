@@ -40,8 +40,13 @@ body{
   padding-right: 15px;
   line-height: 40px;
 }
+.lablegroup{
+  display: block;
+  line-height: 40px;
+  padding-left: 10px;
+}
 input {
-  -webkit-appearance: none;
+/*  -webkit-appearance: none;*/
   -webkit-user-modify: read-write-plaintext-only;
   -webkit-tap-highlight-color: transparent;
 }

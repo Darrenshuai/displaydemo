@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webrtcdemo</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/layout.css">	
+</head>
+<body>
+	<header class="head">
+		<h3 class="tit">在线视频聊天</h3>
+	</header>
+	<section class="container">
+		<div class="w1200">
+			<div class="room-con">
+				<h3 class="rt"><i class="fa fa-film"></i>聊天室</h3>
+				<div class="videobox">
+					<div id="videochatroom">
+						<div class="videoitem">
+							<div class="item-t">
+								<h3><i class="fa fa-user"></i>{{name}}</h3>
+								<div class="tools">
+									<a class="box-close"><i class="fa fa-times"></i></a>
+								</div>
+							</div>
+							<video id="localVideo"  oncontextmenu="return false;"></video>
+							<meter id="localVolume" class="volume_bar" min="-45" max="-20" high="-25" low="-40"></meter>
+						</div>
+					</div>
+					<div class="messbox">
+						<textarea id='messages' readonly='readonly'></textarea>
+						<div class="text-input">
+							<div>
+								<input type="text" placeholder="输入聊天内容">
+							</div>
+							<input type="button" name="" value="发送">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="room-per">
+				<h3 class="rt"><i class="fa fa-users"></i>房间成员</h3>
+				<div class="perlist">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/handlebars-v3.0.3.js"></script>
+	<script src="js/simplewebrtc.js"></script>
+	<script  src="js/index.js"></script>
+</body>
+</html>
